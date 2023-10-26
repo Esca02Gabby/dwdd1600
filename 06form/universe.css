@@ -188,7 +188,7 @@ div.gallery figcaption {
 }
 
 .myForm input:required:valid {
-    border-left: 6px solid red;
+    border-left: 6px solid green;
 
 }
 /* Footer Stuff Here */
