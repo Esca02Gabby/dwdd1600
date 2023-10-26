@@ -186,7 +186,6 @@ div.gallery figcaption {
     border-left: 6px solid red;
 
 }
-
 .myForm input:required:valid {
     border-left: 6px solid green;
 
