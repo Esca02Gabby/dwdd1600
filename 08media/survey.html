@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="description" content="Provide relative historical information about the MCU as well as tools that can inform others on many of its characters and important information that is needed when one is curious about the films."/>
+    <meta charset="UTF-8">
+    <title>Marvel Cinematic Universe 101</title>
+    <link rel="stylesheet" href="universe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <!-- start the page header -->
+    <header>
+        <img src="images/logohero.jpg" alt="site logo" width="150" height="57"> 
+        <div>
+        <h1>Marvel Cinematic Universe 101</h1>
+        <p>Your Ultimate Resource</p>
+        </div>
+    </header>
+    
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">History</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="locations.html">Locations</a></li>
+             <li class="active"><a href="survey.html">Survey</a></li>
+             <li><a href="video.html">Video</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Take our Survey</h1>
+        <p>We are interested in knowing more about our audience. If you have a minute, please share with us.</p>
+        
+        <form method="get" class="myForm" action="thanks.html">
+            
+            <fieldset>
+            <legend>Your Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+                <label>Email*<input type="text" name="mail" required placeholder="tonystark2008@iamironman.com"></label>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Questions</legend>
+                <label>Which types of characters would you like to learn more about?</label>
+                <label><input type="radio" name="method" value="hero"> Superheroes</label>
+                <label><input type="radio" name="method" value="villian"> Super Villians</label>
+                <label><input type="radio" name="method" value="side"> Side Characters</label>
+                <label><input type="radio" name="method" value="all"> All of the above</label>
+                
+                
+                <label>Which is your favorite Phase?</label>
+                <label><input type="checkbox" name="og" value="chosen"> Phase 1</label>
+                <label><input type="checkbox" name="two" value="chosen"> Phase 2</label>
+                <label><input type="checkbox" name="three" value="chosen"> Phase 3</label>
+                <label><input type="checkbox" name="four" value="chosen"> Phase 4</label>
+                <label><input type="checkbox" name="five" value="chosen"> Phase 5</label>
+           
+            <label>How long have you been a fan?
+            <select name="time">
+            <option value="none">Please Select</option>
+            <option value="months">0 to 6 months</option>
+            <option value="year">1 year</option>
+            <option value="years">5 years</option>
+            <option value="long">Since you were a little kid</option>
+            <option value="forever">Your whole life</option>
+            </select>
+            </label>
+               
+            </fieldset>
+            
+            <fieldset>
+            <legend>Origin Story</legend>
+                <label>What got you into Marvel? We want to know your origin story!
+                <textarea name="comments"></textarea>
+            </label>
+                
+            </fieldset> 
+            
+            
+            <input type="submit" value="Turn in the Survey">
+        </form>
+        
+    
+    </main>
+    
+    
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy;2023 &bull; Gabriela Escamilla &bull; <a href="mailto:zen@gmail.com">Email Us</a> </p>
+    </footer>
+</body>
+</html>
