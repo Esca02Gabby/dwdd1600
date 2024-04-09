@@ -1,0 +1,73 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Base styles for mobile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, nav, main, footer{
+    width: 90%; /* Keeps content from stretching too wide on larger screens */
+    max-width: 500px; /* Maximum width of content */
+    text-align: center;
+}
+nav{
+    padding: 20px;
+}
+
+nav button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #171717;
+    color: white;
+
+}
+
+#peopleHere {
+    display: grid;
+    grid-template-columns: 1fr; /* One card per row */
+    gap: 1rem;
+    width: 100%;
+}
+#peopleHere img {
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+}
+.republican {
+    border-color: red;
+    border-width: 5px;
+}
+
+.democrat {
+    border-color: blue;
+    border-width: 5px;
+}
+
+.independent {
+    border-color: grey;
+    border-width: 5px;
+}
+
+
+figure {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #ececec;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+    
+
+figcaption {
+    margin-top: 0.5rem;
+}

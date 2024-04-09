@@ -1,0 +1,6 @@
+@media only screen and (min-width: 35rem) {
+    #peopleHere {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+        gap: 1rem;
+    }
+} /* end media query*/
